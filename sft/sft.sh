@@ -4,8 +4,8 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 export RAY_memory_monitor_refresh_ms=0
 
 python sft.py \
-    --model_name_or_path '/opt/data/private/szc/llm/Llama-2-7b-hf' \
-    --data_path "/opt/data/private/szc/sft_test/test/alpaca_data_en_52k.json" \
+    --model_name_or_path 'Llama-2-7b-hf' \
+    --data_path "alpaca_data_en_52k.json" \
     --bf16 True \
     --output_dir checkpoints/ \
     --num_train_epochs 3 \
